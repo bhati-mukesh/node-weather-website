@@ -4,7 +4,7 @@
   "description": "learning Express",
   "main": "app.js",
   "scripts": {
-    "start":"node src/app.json"
+    "start":"node src/app.js"
   },
   "author": "MukeshBhati",
   "license": "ISC",

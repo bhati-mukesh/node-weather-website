@@ -81,7 +81,6 @@ app.get('/about',(request,response)=>{
     })
 })
 
-
 app.get('/help/*',(request,response)=>{
     response.render('error',{errorMessage:'Help Article Not Found!',title:'404',name:"Mukesh Bhati"})
 })
