@@ -15,7 +15,8 @@ const foreCast = (lat,lon,callback)=>{
                 feelslike: response.body.current.feelslike,
                 timezone: response.body.location.timezone_id,
                 timezone_id:response.body.location.timezone_id,
-                location : response.body.location.name +", " +response.body.location.region +", "+ response.body.location.country
+                location : response.body.location.name +", " +response.body.location.region +", "+ response.body.location.country,
+                stringData: response.body.current.weather_descriptions[0] + ". It is currently "+response.body.current.temperature +" degress out. It feels like "+response.body.current.feelslike +" degress out. The Humidity is "+response.body.current.humidity
             })
         }
     })

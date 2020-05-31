@@ -18,7 +18,8 @@ weatherForm.addEventListener('submit',(e)=>{
                 weather_error.textContent = data.error
                 weather_data.textContent = ''
             }else{
-                weather_data.textContent = data.foreCastData.weather_descriptions 
+                weather_data.textContent = 'Location : '+data.foreCastData.location
+                weather_error.textContent = data.foreCastData.stringData
                 //  console.log(data.foreCastData)
                 //  console.log(data.address)
             }
