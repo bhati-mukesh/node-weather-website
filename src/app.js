@@ -4,6 +4,8 @@ const hbs = require('hbs')
 const geoCode = require('./utils/geocode')
 const foreCast = require('./utils/forecast')
 
+const port = process.env.PORT || 3000
+
 
 // define paths for Express config
 const publicDirectoryPath = path.join(__dirname,'../public')
@@ -88,8 +90,8 @@ app.get('*',(request,response)=>{
     response.render('error',{errorMessage:'Page Not Found!',title:'404',name:"Mukesh Bhati"})
 })
 
-app.listen(3000,()=>{
-    console.log('Server is up on Port ',3000)
+app.listen(port,()=>{
+    console.log('Server is up on Port ',port)
 })
 
 // With this command nodemon also watch the change in file with .js and hbs extensions
